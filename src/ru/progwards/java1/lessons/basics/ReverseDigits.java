@@ -1,4 +1,4 @@
-package ru.progwards.java1.lessons.test;
+package ru.progwards.java1.lessons.basics;
 
 public class ReverseDigits {
 
