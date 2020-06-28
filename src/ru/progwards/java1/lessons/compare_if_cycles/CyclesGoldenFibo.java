@@ -47,32 +47,40 @@ public class CyclesGoldenFibo {
     }
 
 
+//    public static boolean isGoldenTriangle(int a, int b, int c), которая будет возвращать true,
+//    если треугольник со сторонами a, b, c является Золотым. Определим критерии. Он
+//    должен быть равнобедренным и отношение ребра к основанию должно лежать между
+//    значениями 1.61703 и 1.61903.
+
+//    Тест "Метод isGoldenTriangle(int a, int b, int c)" не пройден.
+//    Метод возвращает неверное значение. Переданы параметры: a=34, b=34, c=55.
+//    Возвращено: true. Ожидалось: false
+
     public static boolean isGoldenTriangle(int a, int b, int c){
 
         boolean isGoldenTriangle = false;
 
-        if ((a==b) || (a==c) || (b==c)){
-
-
-            if ((1.61703<= (double) a/(double)b && (double)a/(double)b<=1.61903) ||
-                    (1.61703<= (double) b/(double)a && (double)b/(double)a<=1.61903) ||
-
-                    (1.61703<= (double) a/(double)c && (double)a/(double)c<=1.61903) ||
-                    (1.61703<= (double) c/(double)a && (double)c/(double)a<=1.61903) ||
-
-                    (1.61703<= (double) b/(double)c && (double)b/(double)c<=1.61903) ||
-                    (1.61703<= (double) c/(double)b && (double)c/(double)b<=1.61903)
-
-            ) isGoldenTriangle = true;
-
+        if ((a==b)) {
+            if ((1.61703<= (double) a/(double)c && (double)a/(double)c<=1.61903)){
+                isGoldenTriangle = true;
+            }
+        }
+        else if ((a==c)){
+            if ((1.61703<= (double) a/(double)b && (double)a/(double)b<=1.61903)){
+                isGoldenTriangle = true;
+            }
+        }
+        else if ((b==c)) {
+            if ((1.61703<= (double) b/(double)a && (double)b/(double)a<=1.61903)){
+                isGoldenTriangle = true;
+            }
         }
 
         return isGoldenTriangle;
     }
 
     public static void main(String[] args) {
-
-
+        
     }
-    
+
 }
