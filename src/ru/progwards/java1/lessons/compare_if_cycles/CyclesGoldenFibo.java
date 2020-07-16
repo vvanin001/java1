@@ -47,15 +47,6 @@ public class CyclesGoldenFibo {
     }
 
 
-//    public static boolean isGoldenTriangle(int a, int b, int c), которая будет возвращать true,
-//    если треугольник со сторонами a, b, c является Золотым. Определим критерии. Он
-//    должен быть равнобедренным и отношение ребра к основанию должно лежать между
-//    значениями 1.61703 и 1.61903.
-
-//    Тест "Метод isGoldenTriangle(int a, int b, int c)" не пройден.
-//    Метод возвращает неверное значение. Переданы параметры: a=34, b=34, c=55.
-//    Возвращено: true. Ожидалось: false
-
     public static boolean isGoldenTriangle(int a, int b, int c){
 
         boolean isGoldenTriangle = false;
@@ -80,7 +71,7 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        
+
     }
 
 }
