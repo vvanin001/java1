@@ -2,6 +2,8 @@ package ru.progwards.java1.lessons.classes;
 
 public class Duck extends Animal {
 
+
+
     public Duck(double weight){
         super(weight);
     }
@@ -15,4 +17,17 @@ public class Duck extends Animal {
     public FoodKind getFoodKind(){
         return FoodKind.CORN;
     }
+
+    @Override
+    public double getFoodCoeff(){
+        double foodCoeff = 0.04;
+        return foodCoeff;
+    }
+    @Override
+    public String toString() {
+        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
+        return aboutAnimal;
+    }
+
+
 }

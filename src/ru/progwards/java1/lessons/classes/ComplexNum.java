@@ -18,7 +18,7 @@ public class ComplexNum {
         if (b>=0) return a + "+" + b+ "i";
         else return a + "+" + -b+ "i";
     }
-    
+
     public ComplexNum add(ComplexNum num){
         ComplexNum temp = new ComplexNum();
         temp.a = a + num.a;
@@ -42,6 +42,16 @@ public class ComplexNum {
         temp.a = (a * num.a) + (b * num.b) / (num.a*num.a + num.b*num.b);
         temp.b = (b * num.a) - (a * num.b) / (num.a*num.a + num.b*num.b);
         return (temp);
+    }
+
+    public static void main(String[] args) {
+
+        ComplexNum num1 = new ComplexNum(99, 49);
+        ComplexNum num2 = new ComplexNum(1, 51);
+
+
+
+
     }
 
 

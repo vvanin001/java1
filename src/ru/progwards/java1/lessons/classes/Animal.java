@@ -23,14 +23,12 @@ public class Animal {
         return FoodKind.UNKNOWN;
     }
 
-    public double calculateFoodWeight(){
-        double foodWieght = weight * getFoodCoeff();
-        return foodWieght;
-    }
     @Override
     public String toString(){
         String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
         return aboutAnimal;
     }
 
+
 }
+
