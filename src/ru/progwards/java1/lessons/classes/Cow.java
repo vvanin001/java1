@@ -26,7 +26,7 @@ public class Cow extends Animal {
 
     @Override
     public String toString(){
-        String toString = "I am " + getKind() + ", eat " + calculateFoodWeight();
+        String toString = "I am " + getKind() + ", eat " + getFoodKind();
         return toString;
     }
 
