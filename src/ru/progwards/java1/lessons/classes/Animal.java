@@ -28,9 +28,23 @@ public class Animal {
         return foodWieght;
     }
 
+    public String toString(){
+        String toString = "I am " + getKind() + ", eat " + getFoodKind();
+        return toString;
+    }
+
     public String toStringFull(){
-        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
+        String aboutAnimal = "I am " + getKind() + ", eat " + calculateFoodWeight();
         return aboutAnimal;
+    }
+
+
+    public static void main(String[] args) {
+        Animal a1 = new Animal(25.1);
+        System.out.println(a1.toString());
+        System.out.println(a1.toStringFull());
+
+
     }
 
 }

@@ -23,9 +23,16 @@ public class Duck extends Animal {
         double foodCoeff = 0.04;
         return foodCoeff;
     }
+
+    @Override
+    public String toString(){
+        String toString = "I am " + getKind() + ", eat " + getFoodKind();
+        return toString;
+    }
+
     @Override
     public String toStringFull() {
-        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
+        String aboutAnimal = "I am " + getKind() + ", eat " + calculateFoodWeight();
         return aboutAnimal;
     }
 

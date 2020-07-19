@@ -23,6 +23,13 @@ public class Cow extends Animal {
         double foodCoeff = 0.05;
         return foodCoeff;
     }
+
+    @Override
+    public String toString(){
+        String toString = "I am " + getKind() + ", eat " + calculateFoodWeight();
+        return toString;
+    }
+
     @Override
     public String toStringFull() {
         String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
