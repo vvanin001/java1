@@ -32,7 +32,7 @@ public class Cow extends Animal {
 
     @Override
     public String toStringFull() {
-        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
+        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + calculateFoodWeight();
         return aboutAnimal;
     }
 }

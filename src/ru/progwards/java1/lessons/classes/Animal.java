@@ -34,7 +34,7 @@ public class Animal {
     }
 
     public String toStringFull(){
-        String aboutAnimal = "I am " + getKind() + ", eat " + calculateFoodWeight();
+        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + calculateFoodWeight();
         return aboutAnimal;
     }
 
