@@ -15,8 +15,8 @@ public class ComplexNum {
     @Override
     public String toString(){
 
-        if (b>=0) return a + "+" + b+ "i";
-        else return a + "+" + -b+ "i";
+        if (b>=0) return a + "+" + b + "i";
+        else return a + "+" + (-b) + "i";
     }
 
     public ComplexNum add(ComplexNum num){
@@ -45,11 +45,6 @@ public class ComplexNum {
     }
 
     public static void main(String[] args) {
-
-        ComplexNum num1 = new ComplexNum(99, 49);
-        ComplexNum num2 = new ComplexNum(1, 51);
-
-
 
 
     }
