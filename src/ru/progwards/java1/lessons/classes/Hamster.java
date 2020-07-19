@@ -32,7 +32,7 @@ public class Hamster extends Animal {
 
     @Override
     public String toStringFull() {
-        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + calculateFoodWeight();
+        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + " " + calculateFoodWeight();
         return aboutAnimal;
     }
 

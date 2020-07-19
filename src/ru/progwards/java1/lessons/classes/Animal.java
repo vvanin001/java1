@@ -34,13 +34,13 @@ public class Animal {
     }
 
     public String toStringFull(){
-        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + calculateFoodWeight();
+        String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind() + " " + calculateFoodWeight();
         return aboutAnimal;
     }
 
 
     public static void main(String[] args) {
-        Animal a1 = new Animal(25.1);
+        Animal a1 = new Animal(6.7);
         System.out.println(a1.toString());
         System.out.println(a1.toStringFull());
 
