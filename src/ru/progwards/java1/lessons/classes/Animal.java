@@ -27,8 +27,8 @@ public class Animal {
         double foodWieght = weight * getFoodCoeff();
         return foodWieght;
     }
-    @Override
-    public String toString(){
+
+    public String toStringFull(){
         String aboutAnimal = "I am " + getKind() + ", eat " + getFoodKind();
         return aboutAnimal;
     }
