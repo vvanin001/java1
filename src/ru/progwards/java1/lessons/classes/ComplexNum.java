@@ -16,7 +16,7 @@ public class ComplexNum {
     public String toString(){
 
         if (b>=0) return a + "+" + b + "i";
-        else return a + "+" + (-b) + "i";
+        else return a + "+" + -b + "i";
     }
 
     public ComplexNum add(ComplexNum num){
@@ -39,8 +39,8 @@ public class ComplexNum {
     }
     public ComplexNum div(ComplexNum num){
         ComplexNum temp = new ComplexNum();
-        temp.a = (a * num.a) + (b * num.b) / (num.a*num.a + num.b*num.b);
-        temp.b = (b * num.a) - (a * num.b) / (num.a*num.a + num.b*num.b);
+        temp.a = ((a * num.a) + (b * num.b)) / ((num.a*num.a + num.b*num.b));
+        temp.b = ((b * num.a) - (a * num.b)) / ((num.a*num.a + num.b*num.b));
         return (temp);
     }
 
