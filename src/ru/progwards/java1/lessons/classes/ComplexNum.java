@@ -17,8 +17,6 @@ public class ComplexNum {
 
         return a + "+" + b + "i";
 
-//        if (b>=0) return a + "+" + b + "i";
-//        else return a + "+" + -b + "i";
     }
 
     public ComplexNum add(ComplexNum num){
@@ -48,8 +46,6 @@ public class ComplexNum {
 
     public static void main(String[] args) {
 
-
     }
-
 
 }
