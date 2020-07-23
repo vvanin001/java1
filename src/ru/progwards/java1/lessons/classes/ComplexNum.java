@@ -15,8 +15,10 @@ public class ComplexNum {
     @Override
     public String toString(){
 
-        if (b>=0) return a + "+" + b + "i";
-        else return a + "+" + -b + "i";
+        return a + "+" + b + "i";
+
+//        if (b>=0) return a + "+" + b + "i";
+//        else return a + "+" + -b + "i";
     }
 
     public ComplexNum add(ComplexNum num){
