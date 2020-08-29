@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.arrays;
 
-import tests.test4;
 
 import java.util.Arrays;
 
